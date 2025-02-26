@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Emotion & Academic Analysis</title>
+    <link rel="stylesheet" href="popup.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .hidden { display: none; }
+        body { 
+            width: 400px;
+            min-height: 150px;
+            padding: 15px;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        }
+        .sources-section {
+            margin-top: 15px;
+            padding-top: 10px;
+            border-top: 1px solid #eee;
+        }
+        .source-item {
+            margin: 8px 0;
+            padding: 8px;
+            background: #f8f9fa;
+            border-radius: 4px;
+        }
+        .source-link {
+            color: #1a0dab;
+            text-decoration: none;
+        }
+        .source-link:hover {
+            text-decoration: underline;
+        }
+        .source-authors {
+            font-size: 0.8em;
+            color: #666;
+            margin-top: 4px;
+        }
+    </style>
+</head>
+<body>
+    <div class="app-container">
+        <div id="loader" class="loader-container">
+            <div class="loader"></div>
+            <p>Analyzing content...</p>
+        </div>
+
+        <div id="result" class="hidden"></div>
+        <div id="error" class="error-container hidden">
+            <i class="fa-solid fa-triangle-exclamation"></i>
+            <span class="error-message"></span>
+        </div>
+    </div>
+    <script src="popup.js"></script>
+</body>
+</html>

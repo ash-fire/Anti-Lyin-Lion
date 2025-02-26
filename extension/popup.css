@@ -1,0 +1,112 @@
+body {
+  width: 400px;
+  padding: 15px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.hidden { display: none; }
+
+.loader-container {
+  text-align: center;
+  padding: 2rem;
+}
+
+.loader {
+  border: 4px solid #f3f3f3;
+  border-top: 4px solid #3498db;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  animation: spin 1s linear infinite;
+  margin: 0 auto;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.error-container {
+  padding: 1rem;
+  background: #ffebee;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.emotion-section {
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  border-radius: 8px;
+  background: #f8f9fa;
+}
+
+/* Add all other existing styles from your CSS here */
+/* ... */
+
+/* New academic sources styles */
+.source-list {
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.sources-section h4 {
+  color: #2c3e50;
+  margin-bottom: 0.5rem;
+}
+
+.breakdown-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 4px;
+}
+.gdocs-help {
+  color: #666;
+  font-size: 0.9em;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin: 10px 0;
+}
+.relevance-badge {
+  background: #4CAF50;
+  color: white;
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-size: 0.8em;
+  margin-bottom: 4px;
+  display: inline-block;
+}
+
+.paper-meta {
+  font-size: 0.8em;
+  color: #666;
+  margin-top: 4px;
+}
+
+.source-item {
+  position: relative;
+  padding: 12px;
+  margin: 10px 0;
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 8px;
+}
+.no-sources {
+  color: #666;
+  padding: 15px;
+  text-align: center;
+  border: 1px dashed #ddd;
+  border-radius: 8px;
+  margin: 15px 0;
+  font-size: 0.9em;
+}
+
+.no-sources::before {
+  content: "🔍";
+  font-size: 1.5em;
+  display: block;
+  margin-bottom: 8px;
+}
+/* Keep all your existing CSS classes */
